@@ -12,5 +12,5 @@ module.exports = (sql, params = null) => {
       err ? reject(err) : resolve(result);
     });
     conn.end();
-  }).catch((err) => console.log(err));
+  });
 };
